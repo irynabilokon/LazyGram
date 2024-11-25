@@ -1,0 +1,13 @@
+langchain
+transformers
+diffusers
+torch
+accelerate
+sentencepiece
+streamlit
+google-cloud-aiplatform
+google-cloud
+vertexai
+python-dotenv
+pillow
+requests
