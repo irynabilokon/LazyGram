@@ -1,0 +1,91 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@400;500;700&display=swap');
+
+/* Global font style */
+body {
+    font-family: 'Finlandica', sans-serif;
+    background-color: #CEAC81 !important; /* Set background color */
+    color: #620009; /* Set text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Center-align the main content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+/* Customize headers */
+h1, h2, h3 {
+    color: #620009; /* Text color for headers */
+    font-family: 'Finlandica', sans-serif;
+    text-align: center;
+}
+
+/* Button default styling */
+button {
+    background-color: #CEAC81; /* Background color */
+    color: #620009; /* Text color */
+    border: 2px solid #B67343; /* Border color */
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #B67343; /* Hover background */
+    color: #620009; /* Hover text color */
+}
+
+/* Input fields styling */
+input, textarea {
+    border: 2px solid #B67343;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #CEAC81;
+    color: #620009;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for Streamlit's st.radio (radio buttons) */
+div[data-baseweb="radio"] {
+    font-family: 'Finlandica', sans-serif;
+    background-color: #FFF4D1; /* Light background */
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+div[data-baseweb="radio"] label {
+    color: #620009; /* Label color */
+    font-size: 18px;
+}
+
+/* Styling for Streamlit's st.selectbox (dropdown menu) */
+div[role="listbox"] {
+    background-color: #FFF4D1;
+    border: 2px solid #CEAC81;
+    border-radius: 5px;
+    font-family: 'Finlandica', sans-serif;
+    padding: 10px;
+}
+
+div[role="listbox"] div {
+    color: #620009; /* Text color */
+    font-size: 16px;
+}
+
+/* Optional: Add a smooth transition to inputs */
+input, select, textarea {
+    transition: all 0.3s ease;
+}
