@@ -44,8 +44,7 @@ def truncate_content(content: str, platform: str) -> str:
     max_chars = PLATFORM_CONSTRAINTS.get(platform, {}).get("max_chars", 280)
     return content[:max_chars]
 
-def generate_text_gemini(content_type, language, prompt):
-
+def generate_text_gemini(content_type, language, prompt, company_info=""):
     init_vertex_ai()
 
     generative_multimodal_model = GenerativeModel("gemini-1.5-pro-002")
@@ -54,7 +53,7 @@ def generate_text_gemini(content_type, language, prompt):
     platform_instruction = instruction.format(platform=content_type)
     prefix = PLATFORM_CONSTRAINTS.get(content_type, {}).get("prefix", "Create social media content")
 
-    full_prompt = f"{prefix}. {platform_instruction} {prompt}"
+    full_prompt = f"{prefix}. {platform_instruction}. Company/Personal Context: {company_info}. {prompt}"
 
     try:
         response = generative_multimodal_model.generate_content([full_prompt])
@@ -64,11 +63,11 @@ def generate_text_gemini(content_type, language, prompt):
         st.error(f"Error generating text: {e}")
         return None
 
-def create_content(content_type, language, prompt, num_images=0):
+def create_content(content_type, language, prompt, company_info="", num_images=0):
     st.subheader(f"{content_type} Content Generator")
 
     try:
-        generated_text = generate_text_gemini(content_type, language, prompt)
+        generated_text = generate_text_gemini(content_type, language, prompt, company_info)
 
         if content_type == "Instagram":
             st.write(generated_text)
