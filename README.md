@@ -12,15 +12,14 @@ LazyGram is a content generation tool designed to create personalized text conte
 - **Platform-Aware Content**:
   - Generate concise tweets (Twitter/X) with a limit of 280 characters.
   - Create engaging Instagram posts with up to 2,200 characters.
-  - Supports various platforms and audiences (blogs, SEO, children's content, and more).
   
 - **Language Support**:
   - Generate content in multiple languages, including:
     - English (`en`)
+    - Spanish (`es`)
     - Italian (`it`)
     - French (`fr`)
     - Dutch (`nl`)
-    - Spanish (`es`)
     - Ukrainian (`ua`)
 
 - **Personalization**:
@@ -38,7 +37,7 @@ LazyGram is a content generation tool designed to create personalized text conte
 ## Deployment
 LazyGram is deployed on **Google Cloud** and can be accessed via the following link:
 
-[LazyGram App](https://lazygram-esens-60711038026.europe-southwest1.run.app/)
+[![Visit App](https://img.shields.io/badge/Visit_App-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://lazygram-esens-60711038026.europe-southwest1.run.app/)
 
 ## Usage
 1. Visit the LazyGram app using the link above.
