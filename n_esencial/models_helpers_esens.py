@@ -1,4 +1,3 @@
-import os
 import streamlit as st
 import vertexai
 from vertexai.preview.generative_models import GenerativeModel
@@ -19,6 +18,13 @@ LANGUAGES = {
     "Spanish": "es",
     "Ukrainian": "uk",
 }
+LLM_MODELS = {
+    "Gemini 1.5 Pro": {
+        "engine": "vertex",
+        "model_name": "gemini-1.5-pro-002",
+        "function": "generate_text_gemini"
+    }
+}
 
 PLATFORM_CONSTRAINTS = {
     "Twitter": {
@@ -28,9 +34,24 @@ PLATFORM_CONSTRAINTS = {
     "Instagram": {
         "max_chars": 2200,
         "prefix": "Create an engaging Instagram post",
+    },
+    "LinkedIn": {
+        "max_chars": 3000,
+        "prefix": "Create a professional LinkedIn post",
     }
 }
 
+PLATFORM_IMAGE_LIMITS = {
+    "Twitter": {
+        "max_images": 2
+    },
+    "Instagram": {
+        "max_images": 10
+    },
+    "LinkedIn": {
+        "max_images": 3
+    }
+}
 language_instructions = {
     "Ukrainian": "Write in Ukrainian. Create a {platform} post reflecting contemporary language.",
     "English": "Write a clear, engaging {platform} post.",
@@ -60,10 +81,10 @@ def generate_text_gemini(content_type, language, prompt, company_info=""):
         generated_text = response.text if response else "No text generated."
         return generated_text
     except Exception as e:
-        st.error(f"Error generating text: {e}")
-        return None
+        raise Exception(f"Error generating text with Gemini: {e}")
 
-def create_content(content_type, language, prompt, company_info="", num_images=0):
+    
+def create_content(content_type, language, prompt, company_info="", num_images=0, model_name="GPT-4"):
     st.subheader(f"{content_type} Content Generator")
 
     try:
