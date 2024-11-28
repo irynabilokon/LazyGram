@@ -12,6 +12,7 @@ LazyGram is a content generation tool designed to create personalized text conte
 - **Platform-Aware Content**:
   - Generate concise tweets (Twitter/X) with a limit of 280 characters.
   - Create engaging Instagram posts with up to 2,200 characters.
+  - Create professional LinkedIn post with a limit of 3,000 characters.
   
 - **Language Support**:
   - Generate content in multiple languages, including:
