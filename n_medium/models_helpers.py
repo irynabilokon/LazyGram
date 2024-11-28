@@ -52,7 +52,7 @@ PLATFORM_CONSTRAINTS = {
     },
     "Blog": {
         "max_chars": 13000,
-        "prefix": "Create a well structured post for a blog on selected topic",
+        "prefix": "Create a well-structured post for a blog on selected topic",
     }
 }
 

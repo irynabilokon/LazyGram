@@ -6,14 +6,15 @@
 
 # LazyGram 💤
 
-LazyGram is a content generation tool designed to create personalized text content for various platforms and audiences. Powered by **Gemini 1.5 Pro**, LazyGram adapts user-provided prompts to generate engaging content tailored to specific platforms like **Twitter**, **Instagram**, and more.
+LazyGram is a content generation tool designed to create personalized text content for various platforms and audiences. Powered by **Gemini 1.5 Pro** and **Dreamlike 2.0**, LazyGram adapts user-provided prompts to generate engaging content tailored to specific platforms like **Twitter**, **Instagram**, and more.
 
 ## Features
 - **Platform-Aware Content**:
   - Generate concise tweets (Twitter/X) with a limit of 280 characters.
-  - Create engaging Instagram posts with up to 2,200 characters.
+  - Create engaging Instagram posts with up to 2,200 characters, with up to 10 pictures.
   - Create professional LinkedIn post with a limit of 3,000 characters.
-  
+  - Generate an article on any topic for your blog.
+
 - **Language Support**:
   - Generate content in multiple languages, including:
     - English (`en`)
@@ -31,14 +32,14 @@ LazyGram is a content generation tool designed to create personalized text conte
   - Features a centered logo for branding and a user-friendly design.
 
 ## Technology Stack
-- **Model**: Gemini 1.5 Pro
-- **Frontend**: [Streamlit]
+- **Models**: Gemini 1.5 Pro/Flash, Dreamlike Photoreal 2.0
+- **Frontend**: Streamlit
 - **Backend**: Google Cloud for deployment and scalability.
 
 ## Deployment
 LazyGram is deployed on **Google Cloud** and can be accessed via the following link:
 
-[![Visit App](https://img.shields.io/badge/Visit_App-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://lazygram-esens-60711038026.europe-southwest1.run.app/)
+[![Visit App](https://img.shields.io/badge/Visit_App-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://lazygram-medium-60711038026.europe-west4.run.app/)
 
 ## Usage
 1. Visit the LazyGram app using the link above.
@@ -46,5 +47,6 @@ LazyGram is deployed on **Google Cloud** and can be accessed via the following l
 3. Choose the desired language for your content.
 4. Enter the prompt or topic you want to generate content about.
 5. (Optional) Add company or personal context for personalized content.
-6. Click the **Generate** button to create your content.
-7. The generated content will be displayed below for review and use.
+6. (Optional) Select number of images you want to generate.
+7. Click the **Generate** button to create your content.
+8. The generated content will be displayed below for review and use.
