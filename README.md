@@ -8,7 +8,12 @@
 
 LazyGram is a content generation tool designed to create personalized text content for various platforms and audiences. Powered by **Gemini 1.5 Pro** and **Dreamlike 2.0**, LazyGram adapts user-provided prompts to generate engaging content tailored to specific platforms like **Twitter**, **Instagram**, and more.
 
-[![Presentation](https://img.shields.io/badge/Presentation-DB112A?style=for-the-badge&logo=canva&logoColor=white)](https://www.canva.com/design/DAGYUw8lt3E/xvUbKpPqQdrtQ-QDEUsrjw/edit?utm_content=DAGYUw8lt3E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+## Artifacts
+
+[![Presentation](https://img.shields.io/badge/Presentation-620009?style=for-the-badge&logo=canva&logoColor=white)](https://www.canva.com/design/DAGYUw8lt3E/xvUbKpPqQdrtQ-QDEUsrjw/edit?utm_content=DAGYUw8lt3E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+[![Medium Article](https://img.shields.io/badge/Deep_Dive_into_Multimodal_Content_Generation-%620009?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@bilokon.iryna.yu/a-deep-dive-into-multimodal-content-generation-architecture-powered-by-ai-a721f7b26884)
+
 
 ## Features
 ### Tab1: Platform-Aware Content Creation
@@ -67,7 +72,7 @@ LazyGram is a content generation tool designed to create personalized text conte
 ## Deployment
 LazyGram is deployed on **Google Cloud** and can be accessed via the following link:
 
-[![Visit App](https://img.shields.io/badge/Visit_App-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://lazygram-advanced-dbsoj4v3la-ez.a.run.app/)
+[![Visit App](https://img.shields.io/badge/Visit_App-620009?style=for-the-badge&logo=instagram&logoColor=white)](https://lazygram-advanced-dbsoj4v3la-ez.a.run.app/)
 
 ---
 
