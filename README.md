@@ -12,7 +12,7 @@ LazyGram is a content generation tool designed to create personalized text conte
 
 [![Presentation](https://img.shields.io/badge/Presentation-620009?style=for-the-badge&logo=canva&logoColor=white)](https://www.canva.com/design/DAGYUw8lt3E/xvUbKpPqQdrtQ-QDEUsrjw/edit?utm_content=DAGYUw8lt3E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
-[![Medium Article](https://img.shields.io/badge/Deep_Dive_into_Multimodal_Content_Generation-%620009?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@bilokon.iryna.yu/a-deep-dive-into-multimodal-content-generation-architecture-powered-by-ai-a721f7b26884)
+[![Medium Article](https://img.shields.io/badge/Medium-Article-620009?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@bilokon.iryna.yu/a-deep-dive-into-multimodal-content-generation-architecture-powered-by-ai-a721f7b26884)
 
 
 ## Features
