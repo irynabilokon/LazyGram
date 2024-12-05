@@ -1,0 +1,14 @@
+
+streamlit
+google-cloud-aiplatform
+google-cloud
+python-dotenv
+requests
+vertexai
+langchain
+transformers
+diffusers
+torch
+accelerate
+sentencepiece
+pillow
